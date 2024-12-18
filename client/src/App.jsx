@@ -27,33 +27,38 @@ function App() {
     <Box
       sx={{
         display: 'flex',
-        
       }}
     >
-      {
-        pageIndex === HOME_PAGE_INDEX &&
-        <>
-          <HomePage />
-        </>
-      }
-      {
-        pageIndex === FAVORITES_PAGE_INDEX &&
-        <>
-          <FavoritesPage />
-        </>
-      }
-      {
-        pageIndex === REWARDS_PAGE_INDEX &&
-        <>
-          <RewardsPage/>
-        </>
-      }
-      {
-        pageIndex === ACCOUNT_PAGE_INDEX &&
-        <>
-          <AccountPage />
-        </>
-      }
+      <Box
+        sx={{
+          m: 2
+        }}
+      >
+        {
+          pageIndex === HOME_PAGE_INDEX &&
+          <>
+            <HomePage />
+          </>
+        }
+        {
+          pageIndex === FAVORITES_PAGE_INDEX &&
+          <>
+            <FavoritesPage />
+          </>
+        }
+        {
+          pageIndex === REWARDS_PAGE_INDEX &&
+          <>
+            <RewardsPage/>
+          </>
+        }
+        {
+          pageIndex === ACCOUNT_PAGE_INDEX &&
+          <>
+            <AccountPage />
+          </>
+        }
+       </Box>
       <Box
           sx={{
               position: 'fixed',
