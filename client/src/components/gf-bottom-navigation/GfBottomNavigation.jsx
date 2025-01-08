@@ -21,10 +21,10 @@ export default function GfBottomNavigation({ onChange }) {
             }}
         >
 
-            <BottomNavigationAction label="For You" icon={<HomeIcon />} />
-            <BottomNavigationAction label="Favorites" icon={<FormatListBulletedIcon />} />
-            <BottomNavigationAction label="Rewards" icon={<EmojiEventsIcon/>} />
-            <BottomNavigationAction label="Account" icon={<AccountCircleIcon/>} />
+            <BottomNavigationAction aria-label="Bottom Navigation Home Button" label="For You" icon={<HomeIcon />} />
+            <BottomNavigationAction aria-label="Bottom Navigation Favorites Button" label="Favorites" icon={<FormatListBulletedIcon />} />
+            <BottomNavigationAction aria-label="Bottom Navigation Rewards Button" label="Rewards" icon={<EmojiEventsIcon/>} />
+            <BottomNavigationAction aria-label="Bottom Navigation Account Button" label="Account" icon={<AccountCircleIcon/>} />
         </BottomNavigation>
     );
 }

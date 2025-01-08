@@ -27,18 +27,27 @@ function App() {
     <Box
       sx={{
         display: 'flex',
+        // backgroundColor: 'pink'
+        // border: '1px dashed green'
       }}
     >
       <Box
         sx={{
-          m: 2
+          m: 2,
+          width: '100%',
+          // border: '1px dashed orange'
         }}
       >
         {
           pageIndex === HOME_PAGE_INDEX &&
-          <>
+          <Box
+            // sx={{
+            //   backgroundColor: 'yellow',
+            //   width: '100%',
+            // }}
+          >
             <HomePage />
-          </>
+          </Box>
         }
         {
           pageIndex === FAVORITES_PAGE_INDEX &&
@@ -64,7 +73,8 @@ function App() {
               position: 'fixed',
               bottom: 0,
               left: 0, 
-              right: 0
+              right: 0,
+              border: '1px dashed black'
           }}
       >
           <GfBottomNavigation onChange={handleNavigationChange} />

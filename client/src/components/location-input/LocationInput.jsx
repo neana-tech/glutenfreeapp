@@ -1,7 +1,8 @@
 import { IconButton, InputAdornment, TextField } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import RoomIcon from '@mui/icons-material/Room';
 
-export default function SearchBar() {
+export default function LocationInput() {
     function handleSearchAction() {
         console.log('searched');
     }
@@ -9,20 +10,15 @@ export default function SearchBar() {
         <>
             <TextField
                 id="outlined-basic"
-                label="Search"
+                aria-label="Location input box"
+                // label="Search"
                 variant="outlined"
                 fullWidth
                 slotProps={{
                     input: {
-                        endAdornment: (
-                            <InputAdornment position="end">
-                                <IconButton
-                                    aria-label="search"
-                                    edge="end"
-                                    onClick={handleSearchAction}
-                                >
-                                    <SearchIcon />
-                                </IconButton>
+                        startAdornment: (
+                            <InputAdornment position="start">
+                                <RoomIcon />
                             </InputAdornment>
                         )
                     }
