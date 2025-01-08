@@ -3,7 +3,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import GfBottomNavigation from './components/gf-bottom-navigation/GfBottomNavigation';
 import { Box } from '@mui/material';
 import HomePage from './components/home-page/HomePage';
@@ -20,9 +20,14 @@ const ACCOUNT_PAGE_INDEX = 3;
 function App() {
   const [pageIndex, setPageIndex] = useState(0);
 
+  useEffect(() => {
+    setPageIndex(3);
+  }, []);
+
   function handleNavigationChange(index) {
     setPageIndex(index);
   }
+  
   return (
     <Box
       sx={{

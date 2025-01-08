@@ -8,7 +8,7 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export default function GfBottomNavigation({ onChange }) {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState(3);
     useEffect(() => {
         onChange(value);
     }, [value]);

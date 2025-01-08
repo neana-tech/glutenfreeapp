@@ -24,11 +24,11 @@ export default function Toolbar() {
             >
                 <TuneIcon />
             </IconButton>
-            <IconButton>
-                <MapIcon 
+            <IconButton
                 aria-label="Toggle map button"
                 onClick={handleMapClick}
-                />
+            >
+                <MapIcon />
             </IconButton>
         </Box>
     );
